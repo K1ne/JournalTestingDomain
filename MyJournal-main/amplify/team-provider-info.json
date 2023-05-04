@@ -1,0 +1,64 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-journalapp-dev-185232-authRole",
+      "UnauthRoleArn": "arn:aws:iam::835404145329:role/amplify-journalapp-dev-185232-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::835404145329:role/amplify-journalapp-dev-185232-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-journalapp-dev-185232-deployment",
+      "UnauthRoleName": "amplify-journalapp-dev-185232-unauthRole",
+      "StackName": "amplify-journalapp-dev-185232",
+      "StackId": "arn:aws:cloudformation:us-east-2:835404145329:stack/amplify-journalapp-dev-185232/a6470ae0-acc2-11ed-a189-027e5788ed92",
+      "AmplifyAppId": "d2cgu8cytvzu53"
+    },
+    "categories": {
+      "storage": {
+        "journals": {
+          "tableName": "journals",
+          "region": "us-east-2",
+          "arn": "arn:aws:dynamodb:us-east-2:835404145329:table/journals",
+          "partitionKeyName": "userID",
+          "partitionKeyType": "S"
+        }
+      },
+      "api": {
+        "journalapp": {}
+      },
+      "auth": {
+        "journalapp2a80a0d6": {}
+      }
+    }
+  },
+  "journaldev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-journalapp-journaldev-183548-authRole",
+      "UnauthRoleArn": "arn:aws:iam::835404145329:role/amplify-journalapp-journaldev-183548-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::835404145329:role/amplify-journalapp-journaldev-183548-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-journalapp-journaldev-183548-deployment",
+      "UnauthRoleName": "amplify-journalapp-journaldev-183548-unauthRole",
+      "StackName": "amplify-journalapp-journaldev-183548",
+      "StackId": "arn:aws:cloudformation:us-east-2:835404145329:stack/amplify-journalapp-journaldev-183548/b0d7fda0-e482-11ed-86f8-06ea8baf63cd",
+      "AmplifyAppId": "d2cgu8cytvzu53"
+    },
+    "categories": {
+      "auth": {
+        "journalapp2a80a0d6": {}
+      },
+      "storage": {
+        "journals": {
+          "tableName": "Login-fex63dj735cdtkg7gbwh4z466i-dev",
+          "region": "us-east-2",
+          "arn": "arn:aws:dynamodb:us-east-2:835404145329:table/Login-fex63dj735cdtkg7gbwh4z466i-dev",
+          "streamArn": "arn:aws:dynamodb:us-east-2:835404145329:table/Login-fex63dj735cdtkg7gbwh4z466i-dev/stream/2023-04-25T19:48:56.154",
+          "partitionKeyName": "id",
+          "partitionKeyType": "S"
+        },
+        "Loginfex63dj735cdtkg7gbwh4z466idev": {}
+      },
+      "api": {
+        "journalapp": {}
+      }
+    }
+  }
+}

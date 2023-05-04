@@ -1,0 +1,55 @@
+@media all and (min-width: 480px) {
+  body {
+      /* background-color: rgb(246, 239, 207); */
+      background-color: white;
+      padding: 0 60px;
+  }
+
+  .Push {
+    padding: 60px 0;
+  }
+
+  .Push form {
+    margin: 0 auto;
+    max-width: 320px;
+  }
+
+  .backgroundImage {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./Pictures/backgroundimage.jpg');
+    text-align: center;
+  }
+
+  .error-share{
+    text-align: center;
+    color: rgb(255, 0, 0);
+    visibility: hidden;
+  }
+
+  .my-nav-link {
+    font-size: 20px;
+  }
+
+  .my-nav-link::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: #383737;
+    transition: width 0.3s;
+  }
+  
+  .my-nav-link:hover::after {
+    width: 100%;
+  }
+
+  .my-navbar {
+    height: 50px;
+  }
+
+  textarea::placeholder {
+      color: black;
+  }
+
+}

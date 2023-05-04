@@ -1,0 +1,89 @@
+@media all and (min-width: 480px) {
+  body {
+      /* background-color: rgb(246, 239, 207); */
+      background-color: white;
+      padding: 0 60px;
+  }
+    
+  .Push {
+    padding: 60px 0;
+  }
+
+  .Push form {
+    margin: 0 auto;
+    max-width: 320px;
+  }
+
+  .backgroundImage {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./Pictures/backgroundimage.jpg');
+    text-align: center;
+  }
+
+  .my-nav-link {
+    font-size: 20px;
+  }
+
+  .my-nav-link::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: #383737;
+    transition: width 0.3s;
+  }
+  
+  .my-nav-link:hover::after {
+    width: 100%;
+  }
+
+  .my-navbar {
+    height: 50px;
+  }
+
+  .mail-button-container {
+      text-align: center;
+    }
+    
+    .mail-button-container label {
+      display: block;
+      margin-bottom: 7px;
+    }
+    
+    .mail-button {
+      border: none;
+      background-color: rgb(255, 255, 255);
+      cursor: pointer;
+      font-size: 75px;
+      color : green
+    }
+
+    .centered-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .my-modal-lg .modal-dialog {
+      max-width: 90%;
+      /* background-image: url('./Pictures/sharedpullbackgroundimage.jpg');
+      background-repeat: no-repeat;
+      background-size: cover; */
+    }
+
+    .centered-modal-body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    .transparent-modal-body {
+      background-color: "black";
+      opacity: 0.8;
+    }
+    
+    
+
+}
