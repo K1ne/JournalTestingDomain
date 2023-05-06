@@ -1,0 +1,44 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
+
+name: CI
+
+on:
+  # runs on pushes to the main branch
+  push:
+    branches: [main]
+  # also runs inside pull requests that target the main branch
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    # uses a Ubuntu Docker image (like a virtual machine)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./journal-app
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+          cache: "npm"
+          cache-dependency-path: journal-app/package-lock.json
+      # install dependencies
+      #- run: amplify init
+      - run: npm install
+      - run: npm test
+      - name: Deploy React to GitHub Pages
+        # You may pin to the exact commit or the version.
+        # uses: bitovi/github-actions-react-to-ghp@1782b3410beca05fb72bd089e5620790c0c4d883
+        uses: bitovi/github-actions-react-to-ghp@v1.2.0
+        with:
+          # Specifies if this action should checkout the code
+          checkout: true
+          # Specifies the path of the static assets after building
+          path: dist
+          # Specifies the command to run after npm ci for the build
+          build_command: npm run build
+
